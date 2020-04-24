@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-feature-settings: antialiased !important;  
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ========= 
+GRID 12 COLUMNS */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: auto;
+}
+
+
+
+/* ====================
+HEADERR */
+
+header {  
+  font-size: 1.4em;
+  background: #EAECFF;
+  height: 80px;
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  grid-column: 2/13;
+}
+
+header span.back {
+  border: 1px solid #D0D1E2 ; 
+  color: #292844;
+  padding: 8px 20px;
+  border-radius: 16px;
+  font-size: 0.8em;
+  background: url();
+}
+
+header ul {
+  display: flex;  
+  list-style: none;
+}
+
+header ul li {
+  color: #575770;
+  flex-shrink: 0;
+  margin: 0 3em;
+}
+
+header ul li:hover {
+  font-weight: bold;
+  color: #242440;
+}
+
+.user {
+  border-radius: 50%;
+  border: 2px solid #EAECFF;  
+}
+
+header .investors {
+  display: flex;
+  align-items: center;
+}
+
+header .investors img {
+  height: 30px;
+  width: 30px;
+  background: rgb(209, 142, 253);
+}
+
+header .investors img:nth-child(2) {
+  transform: translate(10px);
+  background: rgb(188, 195, 255);
+}
+
+header .investors img:nth-child(1) {
+  transform: translate(20px);
+  z-index: 1;
+  background: rgb(252, 222, 157);
+}
+
+header .investors p {
+  display: flex;  
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+/* =====================
+LEFT SIDE NAV */
+
+nav {
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #EAECFF;
+  grid-row: 1/13;
+  padding: 20px 0;
+}
+
+nav .logo {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+nav .logo h1 {
+  font-size: 1.1em;
+  text-align: center;
+}
+
+nav .logo img {
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;    
+}
+
+nav .ser {
+  height: 40px;
+  width: 40px;
+  background: #6483ED;
+  border-radius: 6px;
+}
+
+nav ul li  {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+nav ul li img{
+  height: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  filter: invert(52%) sepia(35%) saturate(3663%) hue-rotate(206deg) brightness(97%) contrast(91%);
+}
+
+nav ul li img:hover {
+  background: #6483ED;
+}
+
+
+main {
+  gap: 50px;
+}
+
+
+
+.profit {
+  grid-column: 2/9;
+  background: #827DF7;
+  border-radius: 20px;
+}
+
+.offer { 
+  grid-column: 9/13;
+  background: #FFCFD0; 
+  border-radius: 20px;
+}
+
+.statistics {
+  grid-column: 2/6;
+}
+.expert {
+  grid-column: 6/9;
+}
+.market {
+  grid-column: 9/13 ;
+}
