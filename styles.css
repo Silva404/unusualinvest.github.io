@@ -39,11 +39,12 @@ header {
 
 header span.back {
   border: 1px solid #D0D1E2 ; 
-  color: #292844;
-  padding: 8px 20px;
+  color: #292844;  
+  padding: 8px 25px 8px 30px;
   border-radius: 16px;
   font-size: 0.8em;
-  background: url();
+  background: url(/images/right.svg) no-repeat 10px;
+  background-size: 8px;
 }
 
 header ul {
@@ -164,14 +165,66 @@ main {
   gap: 50px;
 }
 
+/* ============
+PROFIT */
+
+.profit {
+  grid-column: 2/8;
+  background: #827DF7;
+  border-radius: 20px;
+  padding-bottom: 50px;
+}
+
+
+.profit h3 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #2A2677;
+}
+
+.profit h1 {
+  color: #fff;
+  font-size: 6rem;
+  position: relative;
+  letter-spacing: 0;
+}
+
+.profit h1 span {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 10px;
+}
+
+.side {
+  margin-left: 20px;
+}
+
+.title {
+  letter-spacing: 0.1em;  
+  margin-bottom: 10px;
+  text-transform: uppercase;  
+}
+
+.profit {
+  margin-left: 30px;
+}
+
+.projection {
+  margin: 40px 0 0 60px;
+}
+
 .profit .shoe{ 
-  height: 200px;
-  transform: rotate(-30deg);
+  height: 320px;
+  transform: rotate(-40deg);
+  position: absolute;
+  left: 250px;
+  top: 125px;
 }
 
 .rating, .popularity {
   display: flex;
-  margin-top: 30px;
+  margin: 30px 0 0 60px;  
 }
 
 .price img {
@@ -189,6 +242,34 @@ main {
 .popularity .box {
   background: #5751C8;
 }
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: #121045;
+  height: 120px;
+  width: 180px;
+  padding: 40px;
+  position: absolute;
+  top: 375px;
+  left: 620px;
+  border-radius: 50px 0 25px;
+}
+
+.profit p {
+  color: #fff;
+}
+
+.profit .big {
+  font-size: 1.9em;
+  font-weight: bold;
+}
+
+.price img {
+  filter: invert(66%) sepia(58%) saturate(6570%) hue-rotate(328deg) brightness(102%) contrast(103%);
+}
 
 .popularity img, 
 .rating img{
@@ -198,17 +279,9 @@ main {
 
 
 
+/* =============
+OTHER GRIDS */
 
-
-
-
-
-
-.profit {
-  grid-column: 2/9;
-  background: #827DF7;
-  border-radius: 20px;
-}
 
 .offer { 
   grid-column: 9/13;
