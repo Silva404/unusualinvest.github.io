@@ -429,10 +429,12 @@ OTHER GRIDS */
 
 .wallet img.two {
   background: #FFFFFF;
+  opacity: 0.6;
 }
 
 .wallet img.one {
-  background: #FFCFD0;
+  background: rgb(253, 161, 163);
+  opacity: 0.5;
   margin-right: 20px;
 }
 
@@ -470,48 +472,48 @@ OTHER GRIDS */
   flex-direction: column-reverse;
 }
 
-.graph ul li .full .half:nth-child(1) {
-  background: linear-gradient(90deg, #8A85F7   0%, #5A53CF 100%);
+.graph ul li:nth-child(1) .full .half {
+  background: linear-gradient(0deg, #8A85F7   0%, #5A53CF 100%);
   opacity: 0.5;
   height: 70px;
   width: 10px;
   border-radius: 20px;
 }
 
-.graph ul li .full .half:nth-child(2) {
-  background: linear-gradient(90deg, #8A85F7   0%, #5A53CF 100%);
+.graph ul li:nth-child(2) .full .half {
+  background: linear-gradient(0deg, #8A85F7   0%, #5A53CF 100%);
   opacity: 0.5;
-  height: 20px;
+  height: 40px;
   width: 10px;
   border-radius: 20px;
 }
 
-.graph ul li .full .half:nth-child(3) {
-  background: linear-gradient(90deg, #8A85F7   0%, #5A53CF 100%);
+.graph ul li:nth-child(3) .full .half {
+  background: linear-gradient(0deg, #8A85F7   0%, #5A53CF 100%);
   opacity: 0.5;
-  height: 20px;
+  height: 30px;
   width: 10px;
   border-radius: 20px;
 }
 
-.graph ul li .full .half:nth-child(4) {
-  background: linear-gradient(90deg, #8A85F7   0%, #5A53CF 100%);
+.graph ul li:nth-child(4) .full .half {
+  background: linear-gradient(0deg, #8A85F7   0%, #5A53CF 100%);
   opacity: 0.5;
-  height: 20px;
+  height: 50px;
   width: 10px;
   border-radius: 20px;
 }
 
-.graph ul li .full .half:nth-child(5) {
-  background: linear-gradient(90deg, #8A85F7   0%, #5A53CF 100%);
+.graph ul li:nth-child(5) .full .half {
+  background: linear-gradient(0deg, #8A85F7   0%, #5A53CF 100%);
   opacity: 0.5;
-  height: 20px;
+  height: 65px;
   width: 10px;
   border-radius: 20px;
 }
 
-.graph ul li .full .half:nth-child(6) {
-  background: linear-gradient(90deg, #8A85F7   0%, #5A53CF 100%);
+.graph ul li:nth-child(6) .full .half {
+  background: linear-gradient(0deg, #8A85F7   0%, #5A53CF 100%);
   opacity: 0.5;
   height: 90px;
   width: 10px;
@@ -519,9 +521,125 @@ OTHER GRIDS */
 }
 
 
+/* ==============
+REVIEWSS  */
+
 .expert {
   grid-column: 6/9;
+
+  padding: 40px 40px 0 0;
 }
+
+.reviewer {
+  height: 50px;
+  width: 50px;
+  background: #9E99FF;
+  margin-right: 10px;
+}
+
+.box  {
+  font-size: 1.6em;
+  color: #247366;
+  background: #B7EDE3;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+.status {
+  background: none;
+}
+
+.man .box {
+  background: #5751C8;
+}
+
+.man ul li:nth-child(2) {
+  color: #090826;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.man ul li:nth-child(3) {
+  margin-top: px;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #8D9DB3;  
+}
+
+ .hours{
+  margin-top: 20px;
+}
+
+.under {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 35px 0;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.man {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.man ul {
+  list-style: none;
+}
+
+.under::before {
+  content: '';
+  height: 1px;
+  width: 237px;
+  background: #EBF0F6;
+  position: absolute;
+  top: 665px;
+  left: 620px;
+}
+.under::after {
+  content: '';
+  height: 1px;
+  width: 237px;
+  background: #EBF0F6;
+  position: absolute;
+  top: 750px;
+  left: 620px;
+}
+
+.under::before {
+
+}
+
+.status:: after {
+
+}
+
+
+.under:nth-child(1) .man img {
+  background: #FFCCCD;
+}
+
+.under:nth-child(2) .man img {
+  background: #9E99FF;
+}
+
+.under:nth-child(3) .man img {
+  background: #FFE299;
+}
+
+
+/* ================
+MAP WITH MARKET */
 .market {
+
+  padding: 40px 40px 0 0;
   grid-column: 9/13 ;
 }
