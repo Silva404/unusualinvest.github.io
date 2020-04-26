@@ -614,24 +614,20 @@ REVIEWSS  */
   left: 620px;
 }
 
-.under::before {
-
+.yel {
+  color: #755B36;
+  background: #FFEED6;
 }
 
-.status:: after {
-
-}
-
-
-.under:nth-child(1) .man img {
+.pink {
   background: #FFCCCD;
 }
 
-.under:nth-child(2) .man img {
+.purple{
   background: #9E99FF;
 }
 
-.under:nth-child(3) .man img {
+.yellow {
   background: #FFE299;
 }
 
@@ -639,7 +635,10 @@ REVIEWSS  */
 /* ================
 MAP WITH MARKET */
 .market {
-
   padding: 40px 40px 0 0;
-  grid-column: 9/13 ;
+  grid-column: 9/13 ;  
+}
+
+.market img {
+  margin-top: 10px;
 }
