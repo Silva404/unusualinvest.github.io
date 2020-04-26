@@ -176,9 +176,6 @@ nav ul li img:hover {
 }
 
 
-main {
-  gap: 50px;
-}
 
 /* ============
 PROFIT */
@@ -253,7 +250,7 @@ PROFIT */
   height: 40px;
   width: 40px;
   padding: 10px;  
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 .rating .box,
@@ -387,7 +384,56 @@ OTHER GRIDS */
 
 .statistics {
   grid-column: 2/6;
+  margin-left: 40px;
+  padding: 40px 40px 0 0;
 }
+
+.statistics {
+
+}
+
+.status {
+  background: #FFF7F2 ;
+}
+
+.wallet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  background: #FFF7F2;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.wallet ul {
+  list-style: none;
+  color: rgb(146, 146, 146);
+}
+
+.wallet ul li:nth-child(2) {
+  color: #000;
+}
+
+
+
+.wallet img.two {
+  background: #FFFFFF;
+}
+
+.wallet img.one {
+  background: #FFCFD0;
+  margin-right: 20px;
+}
+
+
+
+.left {
+  display: flex;
+  align-items: center;
+
+}
+
 .expert {
   grid-column: 6/9;
 }
