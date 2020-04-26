@@ -112,6 +112,10 @@ nav {
   padding: 20px 0;
 }
 
+nav h1 {
+  color: #233B58;
+}
+
 nav .logo {
   display: flex;
   flex-direction: column; 
@@ -126,6 +130,9 @@ nav .logo h1 {
 nav .logo img {
   height: 30px;
   margin-bottom: 10px;
+  filter: invert(66%) sepia(58%) saturate(6570%) hue-rotate(328deg) brightness(102%) contrast(103%);
+  opacity: 0.8;  
+  box-shadow: 0px 2px 12px rgba(86, 255, 218, 0.2);
 }
 
 nav ul {
@@ -147,7 +154,7 @@ nav ul li  {
   margin: 12px 0;
   align-items: center;
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 nav ul li img{
@@ -158,9 +165,14 @@ nav ul li img{
   filter: invert(65%) sepia(35%) saturate(3663%) hue-rotate(206deg) brightness(77%) contrast(91%);
 }
 
+nav ul li:hover {
+  font-weight: bold;  
+}
+
 nav ul li img:hover {
   filter: invert(100%) sepia(35%) saturate(63%) hue-rotate(156deg) brightness(100%) contrast(100%);
   background: #6483ED;  
+  box-shadow: 1px 12px 10px rgba(255, 255, 255, 0.1);
 }
 
 
@@ -230,7 +242,7 @@ PROFIT */
 
 .rating, .popularity {
   display: flex;
-  margin: 30px 0 0 60px;  
+  margin: 20px 0 0 60px;  
 }
 
 .price img {
@@ -258,8 +270,8 @@ PROFIT */
   height: 130px;
   width: 180px;
   position: absolute;
-  top: 386px;
-  left: 680px;
+  top: 370px;
+  left: 685px;
   border-radius: 50px 0 25px;
 }
 
@@ -285,10 +297,11 @@ PROFIT */
   filter: invert(66%) sepia(58%) saturate(6570%) hue-rotate(328deg) brightness(102%) contrast(103%);
 }
 
-/* .popularity img, 
+.popularity img, 
 .rating img{
-  filter: invert(100%) sepia(10%) saturate(10%) hue-rotate(150deg) brightness(112%) contrast(116%);
-} */
+  filter: invert(100%) sepia(15%) saturate(105%) hue-rotate(170deg) brightness(100%) contrast(100%);
+  background: #5751C8;
+}
 
 .offer { 
   grid-column: 9/13;
@@ -298,11 +311,13 @@ PROFIT */
 }
 
 .offer img {
-  height: 300px;
-  transform: translate(-30px,-30px); 
+  height: 280px;
+  transform: translate(-20px,-30px); 
   position: absolute;
   z-index: 1;
+  opacity: 0.8;
 }
+
 .offer p {
   margin: 20px 0 0 20px;
   font-weight: bold;
@@ -326,12 +341,42 @@ PROFIT */
   padding: 20px;
   border-radius: 10px;
   margin: 0 auto 20px;
-  width: 320px;
-  transform: translate(0, 250px);
+  width: 360px;
+  transform: translate(0, 225px);
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.advices ul li {
+  font-weight: bold;
+  color: #080725; 
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.advices ul li:nth-child(2) {
+  font-weight: normal; 
+  font-size: 1.5em;
+  color: #8D9DB3;
+  margin-bottom: 5px;
+}
+
+.advices span {
+  background: #FF5656;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.4em;
+  box-shadow: 1px 5px 12px rgba(255,86,86,.5);
+
+  padding: 10px 20px;
+  border-radius: 5px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 /* =============
