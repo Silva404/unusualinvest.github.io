@@ -393,17 +393,17 @@ OTHER GRIDS */
 }
 
 .status {
-  background: #FFF7F2 ;
+  background: #FFF7F2;
+  border-radius: 20px;
 }
+
 
 .wallet {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
-  background: #FFF7F2;
   padding: 30px;
-  border-radius: 16px;
 }
 
 .wallet ul {
@@ -413,8 +413,18 @@ OTHER GRIDS */
 
 .wallet ul li:nth-child(2) {
   color: #000;
+  font-size: 2em;
+  font-weight: bold;
 }
 
+.wallet ul li:nth-child(3) {
+  margin-top: 4px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  color: #886060;
+}
 
 
 .wallet img.two {
@@ -426,13 +436,88 @@ OTHER GRIDS */
   margin-right: 20px;
 }
 
-
-
 .left {
   display: flex;
   align-items: center;
-
 }
+
+.graph {
+  margin: 10px 40px 0;
+}
+
+.graph ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;  
+}
+
+.graph ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #8E8484;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.graph ul li .full {
+  background: #FFDDDE;
+  height: 100px;
+  width: 10px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.graph ul li .full .half:nth-child(1) {
+  background: linear-gradient(90deg, #8A85F7   0%, #5A53CF 100%);
+  opacity: 0.5;
+  height: 70px;
+  width: 10px;
+  border-radius: 20px;
+}
+
+.graph ul li .full .half:nth-child(2) {
+  background: linear-gradient(90deg, #8A85F7   0%, #5A53CF 100%);
+  opacity: 0.5;
+  height: 20px;
+  width: 10px;
+  border-radius: 20px;
+}
+
+.graph ul li .full .half:nth-child(3) {
+  background: linear-gradient(90deg, #8A85F7   0%, #5A53CF 100%);
+  opacity: 0.5;
+  height: 20px;
+  width: 10px;
+  border-radius: 20px;
+}
+
+.graph ul li .full .half:nth-child(4) {
+  background: linear-gradient(90deg, #8A85F7   0%, #5A53CF 100%);
+  opacity: 0.5;
+  height: 20px;
+  width: 10px;
+  border-radius: 20px;
+}
+
+.graph ul li .full .half:nth-child(5) {
+  background: linear-gradient(90deg, #8A85F7   0%, #5A53CF 100%);
+  opacity: 0.5;
+  height: 20px;
+  width: 10px;
+  border-radius: 20px;
+}
+
+.graph ul li .full .half:nth-child(6) {
+  background: linear-gradient(90deg, #8A85F7   0%, #5A53CF 100%);
+  opacity: 0.5;
+  height: 90px;
+  width: 10px;
+  border-radius: 20px;
+}
+
 
 .expert {
   grid-column: 6/9;
